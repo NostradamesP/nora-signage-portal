@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nora Signage | Señalización digital SaaS y local</title>
+  <meta name="description" content="Portal comercial de Nora Signage: señalización digital en la nube o instalada localmente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+
+<body data-focus="{{ focus|default('') }}">
+  <header class="site-header">
+    <a href="/" class="brand">
+      <span class="brand-mark">N</span>
+      <span>Nora Signage</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#precios">Precios</a>
+      <a href="#implementacion">Implementación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#comparacion">Ver opciones</a>
+      <a class="btn btn-primary" href="#contacto">Solicitar demo</a>
+    </div>
+
+    <button class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Plataforma profesional de señalización digital</span>
+        <h1>Señalización digital para empresas, en la nube o instalada localmente</h1>
+        <p>
+          Gestiona pantallas, playlists, contenido, programación y monitoreo desde un solo lugar.
+          Disponible como servicio SaaS o como instalación local en tus propios servidores.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#saas" class="btn btn-primary btn-large">
+            <span class="icon">☁</span> Quiero SaaS
+          </a>
+          <a href="#local" class="btn btn-outline btn-large">
+            <span class="icon">▤</span> Quiero instalación local
+          </a>
+        </div>
+
+        <div class="trust-row">
+          <div>
+            <span class="mini-icon">◇</span>
+            <strong>Seguro y confiable</strong>
+            <small>Control, roles y permisos.</small>
+          </div>
+          <div>
+            <span class="mini-icon">▥</span>
+            <strong>Gestión centralizada</strong>
+            <small>Todo desde un dashboard.</small>
+          </div>
+          <div>
+            <span class="mini-icon">◷</span>
+            <strong>Disponible 24/7</strong>
+            <small>Monitoreo y soporte.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="dashboard-card float-card">
+          <aside class="dash-sidebar">
+            <div class="dash-logo">Nora</div>
+            <span class="dash-item active">Dashboard</span>
+            <span class="dash-item">Pantallas</span>
+            <span class="dash-item">Playlists</span>
+            <span class="dash-item">Contenido</span>
+            <span class="dash-item">Programación</span>
+            <span class="dash-item">Monitoreo</span>
+            <span class="dash-item">Usuarios</span>
+          </aside>
+
+          <div class="dash-main">
+            <div class="dash-top">
+              <div>
+                <h3>Dashboard</h3>
+                <p>Empresa demo</p>
+              </div>
+              <div class="avatar">ER</div>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat">
+                <span>Pantallas</span>
+                <strong>128</strong>
+              </div>
+              <div class="stat">
+                <span>En línea</span>
+                <strong>98</strong>
+              </div>
+              <div class="stat">
+                <span>Offline</span>
+                <strong>30</strong>
+              </div>
+              <div class="stat">
+                <span>Playlists</span>
+                <strong>56</strong>
+              </div>
+            </div>
+
+            <div class="dash-content">
+              <div class="screen-grid">
+                <div class="screen online"><span></span><strong>Tienda Centro</strong><small>En línea</small></div>
+                <div class="screen online"><span></span><strong>Sucursal Norte</strong><small>En línea</small></div>
+                <div class="screen offline"><span></span><strong>Sucursal Sur</strong><small>Sin conexión</small></div>
+                <div class="screen online"><span></span><strong>Recepción</strong><small>En línea</small></div>
+              </div>
+
+              <div class="schedule-card">
+                <h4>Programación hoy</h4>
+                <p><b>09:00</b> Promoción verano</p>
+                <p><b>12:00</b> Menú del día</p>
+                <p><b>15:00</b> Video corporativo</p>
+                <p><b>18:00</b> Ofertas flash</p>
+              </div>
+            </div>
+
+            <div class="chart-row">
+              <div class="line-chart">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones" class="section solution-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Dos formas de vender e implementar</span>
+        <h2>El mismo producto, dos modalidades</h2>
+        <p>Diseñado para clientes que quieren operar en la nube o mantener el sistema dentro de su propia red.</p>
+      </div>
+
+      <div class="solution-grid">
+        <article id="saas" class="solution-card reveal">
+          <div class="solution-icon cloud">☁</div>
+          <h3>A) SaaS / Cloud</h3>
+          <p>Servicio en la nube, sin infraestructura local. Acceso seguro desde cualquier lugar.</p>
+          <ul>
+            <li>Sin servidor local</li>
+            <li>Actualizaciones centralizadas</li>
+            <li>Escalable por sucursal</li>
+            <li>Acceso remoto</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary">Conocer plan SaaS</a>
+        </article>
+
+        <article id="local" class="solution-card reveal delay-1">
+          <div class="solution-icon server">▤</div>
+          <h3>B) Instalación Local</h3>
+          <p>Instalación en tus propios servidores para mayor control, autonomía y funcionamiento interno.</p>
+          <ul>
+            <li>Servidor en tus instalaciones</li>
+            <li>Mayor control interno</li>
+            <li>Ideal para redes locales</li>
+            <li>Soporte y mantenimiento</li>
+          </ul>
+          <a href="#contacto" class="btn btn-outline">Conocer solución local</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="comparacion" class="section comparison-section">
+      <div class="section-heading reveal">
+        <h2>¿Qué modalidad te conviene?</h2>
+        <p>Una comparación simple para que el cliente entienda la diferencia sin tecnicismos.</p>
+      </div>
+
+      <div class="comparison-table reveal">
+        <div class="row head">
+          <span>Aspecto</span>
+          <span>SaaS / Cloud</span>
+          <span>Instalación Local</span>
+        </div>
+        <div class="row"><span>Implementación</span><span>Rápida y 100% en la nube</span><span>Instalación en tus servidores</span></div>
+        <div class="row"><span>Conectividad</span><span>Requiere Internet</span><span>Funciona en red local</span></div>
+        <div class="row"><span>Mantenimiento</span><span>Actualizaciones automáticas</span><span>Tú decides cuándo actualizar</span></div>
+        <div class="row"><span>Escalabilidad</span><span>Escalable por sucursal</span><span>Depende de tu infraestructura</span></div>
+        <div class="row"><span>Control</span><span>Administración centralizada</span><span>Control total de datos</span></div>
+        <div class="row"><span>Ideal para</span><span>Múltiples sedes y operación remota</span><span>Empresas con red interna o seguridad estricta</span></div>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="section-heading reveal">
+        <h2>Todo lo que necesitas para comunicar mejor</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal"><span>▣</span><h3>Gestión de pantallas</h3><p>Administra todas tus pantallas desde un solo dashboard.</p></article>
+        <article class="feature-card reveal"><span>▶</span><h3>Playlists</h3><p>Crea listas de reproducción reutilizables y organizadas.</p></article>
+        <article class="feature-card reveal"><span>◫</span><h3>Programación</h3><p>Programa contenido por hora, día, semana o fecha especial.</p></article>
+        <article class="feature-card reveal"><span>⌁</span><h3>Monitoreo</h3><p>Visualiza estado online/offline y actividad de pantallas.</p></article>
+        <article class="feature-card reveal"><span>▧</span><h3>Contenido multimedia</h3><p>Soporta imágenes, videos, HTML y widgets.</p></article>
+        <article class="feature-card reveal"><span>◉</span><h3>Roles y permisos</h3><p>Controla quién puede crear, aprobar y publicar contenido.</p></article>
+      </div>
+    </section>
+
+    <section id="implementacion" class="section process-section">
+      <div class="section-heading reveal">
+        <h2>Cómo trabajamos</h2>
+        <p>Un proceso claro para SaaS y para instalaciones locales.</p>
+      </div>
+
+      <div class="process-line">
+        <div class="step reveal"><b>1</b><h3>Diagnóstico</h3><p>Analizamos necesidades, pantallas, red e infraestructura.</p></div>
+        <div class="step reveal"><b>2</b><h3>Configuración</h3><p>Creamos la cuenta SaaS o preparamos el entorno local.</p></div>
+        <div class="step reveal"><b>3</b><h3>Implementación</h3><p>Conectamos pantallas, usuarios, playlists y contenido.</p></div>
+        <div class="step reveal"><b>4</b><h3>Soporte</h3><p>Acompañamiento, actualizaciones, backup y mantenimiento.</p></div>
+      </div>
+    </section>
+
+    <section id="precios" class="section pricing-section">
+      <div class="pricing-copy reveal">
+        <span class="eyebrow">Planes flexibles</span>
+        <h2>Una modalidad para cada tipo de empresa</h2>
+        <p>Los precios pueden adaptarse por cantidad de pantallas, sucursales, almacenamiento, soporte y nivel de implementación.</p>
+        <small>*Valores referenciales para prototipo comercial.</small>
+      </div>
+
+      <div class="price-card reveal delay-1">
+        <span class="price-icon">☁</span>
+        <h3>Plan SaaS</h3>
+        <p>Servicio en la nube por suscripción.</p>
+        <strong>Desde US$49/mes</strong>
+        <ul>
+          <li>Gestión de pantallas</li>
+          <li>Actualizaciones incluidas</li>
+          <li>Soporte mensual</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Solicitar propuesta SaaS</a>
+      </div>
+
+      <div class="price-card reveal delay-2">
+        <span class="price-icon">▤</span>
+        <h3>Solución Local</h3>
+        <p>Instalación en servidores del cliente.</p>
+        <strong>Desde US$1,200</strong>
+        <ul>
+          <li>Implementación única</li>
+          <li>Capacitación incluida</li>
+          <li>Soporte anual opcional</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline">Solicitar propuesta local</a>
+      </div>
+    </section>
+
+    <section id="contacto" class="final-cta reveal">
+      <div>
+        <h2>Elige la modalidad que mejor se adapta a tu empresa</h2>
+        <p>Te ayudamos a decidir entre SaaS, instalación local o una solución híbrida.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="mailto:hola@norasignage.com" class="btn btn-primary">Hablar con ventas</a>
+        <a href="#" class="btn btn-light">Agendar demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="/" class="brand footer-brand">
+        <span class="brand-mark">N</span>
+        <span>Nora Signage</span>
+      </a>
+      <p>Plataforma profesional de señalización digital para empresas.</p>
+    </div>
+
+    <div>
+      <h4>Producto</h4>
+      <a href="#">Características</a>
+      <a href="#">Seguridad</a>
+      <a href="#">Integraciones</a>
+    </div>
+
+    <div>
+      <h4>Soluciones</h4>
+      <a href="#">SaaS</a>
+      <a href="#">Instalación local</a>
+      <a href="#">Híbrido</a>
+    </div>
+
+    <div>
+      <h4>Contacto</h4>
+      <a href="mailto:hola@norasignage.com">hola@norasignage.com</a>
+      <a href="#">+1 (786) 123-4567</a>
+      <a href="#">Santo Domingo, RD</a>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
